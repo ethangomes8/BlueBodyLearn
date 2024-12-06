@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabyCaptcha</title>
+    <link rel="stylesheet" href="stylelaby.css">
+</head>
+<body>
+    <div class="emoji-bulle">🐠</div>
+    <div class="emoji-bulle">🐟</div>
+    <div class="emoji-bulle">🐬</div>
+    <div class="emoji-bulle"><img src="images/crabe.png" alt="Crabe Lyreco" style="height: 15%; width: 15%;"></div>
+    <div class="emoji-bulle">🌊</div>
+    <section class="container-fluid content">
+        <div class="row">
+            <h1>Verifier que vous êtes humain</h1>
+            <p>Votre but est de récupérer tout les planctons avec le petit poisson avant de finir le labyrinthe</p>
+            <div id="captcha-container">
+                <table id="labyrinthe"></table>
+            </div>
+            <div class="col-md-6">
+              <p>Déplacez le poisson (votre position) à la sortie (flèche) en utilisant les fleches haut(⬆️), bas(⬇️), gauche(⬅️), droite(➡️)</p>
+                <div class="text-center">
+                    <p>⬆️</p>
+                    <p>⬅️ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍➡️</p>
+                    <p>⬇️</p>
+                </div>
+
+                </form>
+                <div class="success text-center"></div>
+              <p class="errors alert-danger text-center"></p>
+            </div>
+        </div>
+    </section>
+    <script src="javalaby.js"></script>
+</body>
+</html>

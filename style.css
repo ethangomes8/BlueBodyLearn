@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to bottom, #0099cc, #004080);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    overflow-x: hidden;
+}
+
+.logo {
+    margin-top: 1rem;
+}
+
+.header {
+    font-size: 3rem; 
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ffeb3b; 
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 20px rgba(6, 6, 6, 0.5); 
+    transition: color 0.3s ease; 
+    text-align: center; 
+}
+
+.header nav {
+    text-align: center; 
+    margin-top: 1rem; 
+}
+
+.navbar a {
+    color: #ffeb3b; 
+    text-decoration: none; 
+    margin: 0 15px; 
+    transition: color 0.3s ease;
+    font-size: 1rem; 
+}
+
+.navbar a:hover {
+    color: #ffc107; 
+}
+
+.navbar a {
+    font-size: 1.5rem; 
+}
+
+.hero {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+.hero {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.hero input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hero button:hover {
+    background-color: #ffc107af;
+}
+
+.btn {
+    background: #ffeb3b;
+    color: #333;
+    padding: 0.8rem 1.2rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #ffc107;
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.background {
+    position: relative;
+    text-align: center;
+}
+
+.body-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.organes button {
+    background: rgba(255, 255, 255, 0.281);
+    border: none;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.4s ease, background 0.4s ease;
+}
+
+.organes button:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.205);
+}
+
+.cerveau {
+    position: absolute;
+    top: 7%;
+    left: 44%;
+}
+
+.coeur {
+    position: absolute;
+    top: 46%;
+    left: 45%;
+}
+
+.poumon {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+}
+
+.reins {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+
+.infos p {
+    margin: 1rem 0;
+    line-height: 1.5; 
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.about-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    color: #ffeb3b;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 20px rgba(6, 6, 6, 0.5); 
+}
+
+.footer {
+    margin-top: 2rem;
+    color: #e1f5fe;
+    text-align: center; 
+    font-size: 0.9rem; 
+    padding: 1rem; 
+    background-color: #004080; 
+    border-top: 2px solid #ffeb3b;
+}
+
+#arrow {
+    visibility: hidden;
+    display: inline;
+}
+
+@keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(20deg); }
+}
+
+
+.emoji-bulle {
+    position: absolute;
+    font-size: 2rem;
+    animation: floatUp 5s infinite ease-in-out;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(1000px); opacity: 1; }
+    100% { transform: translateY(-300px); opacity: 0; }
+}
+
+.emoji-bulle:nth-child(1) { top: 95%; left: 20%; animation-delay: 0.2s; }
+.emoji-bulle:nth-child(2) { top: 95%; left: 60%; animation-delay: 1s; }
+.emoji-bulle:nth-child(3) { top: 95%; left: 40%; animation-delay: 1.5s; }
+.emoji-bulle:nth-child(4) { top: 95%; left: 75%; animation-delay: 2s; }
+.emoji-bulle:nth-child(5) { top: 95%; left: 10%; animation-delay: 2.5s; }
+
+

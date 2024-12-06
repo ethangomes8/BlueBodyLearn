@@ -1,0 +1,259 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crédits - DA Masterclass</title>
+    <style>
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #0099cc, #004080);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+            overflow-x: hidden;
+        }
+
+        
+        .container {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            margin-bottom: 20px;
+            padding: 1rem;
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        
+        .header {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #ffeb3b;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+        }
+
+        .header span {
+            animation: wave 1.2s infinite;
+        }
+
+        .credit-titre {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            color: #ffeb3b;
+        }
+
+        .credit-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .credit {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 1rem;
+            width: 240px;
+            text-align: center;
+            transition: transform 0.4s ease, background 0.4s ease;
+            cursor: pointer;
+            position: relative;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .credit:hover {
+            transform: scale(1.1);
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .credit h2 {
+            font-size: 1.2rem;
+            color: #00e5ff;
+        }
+
+        .credit p {
+            font-size: 1rem;
+            color: #e1f5fe;
+        }
+
+        
+        .bubulles {
+            background: #ffeb3b;
+            color: #333;
+            padding: 0.8rem 1.2rem;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .bubulles:hover {
+            background: #ffc107;
+            transform: scale(1.1);
+        }
+
+        .flote {
+            position: fixed;
+            right: 1rem;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        
+        .footer {
+            margin-top: 2rem;
+            color: #e1f5fe;
+            text-align: center;
+        }
+
+        @keyframes wave {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(20deg); }
+        }
+
+        
+        .emoji-bulle {
+            position: absolute;
+            font-size: 2rem;
+            animation: floatUp 5s infinite ease-in-out;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(100px); opacity: 1; }
+            100% { transform: translateY(-300px); opacity: 0; }
+        }
+
+        .emoji-bulle:nth-child(1) { top: 95%; left: 20%; animation-delay: 0.2s; }
+        .emoji-bulle:nth-child(2) { top: 95%; left: 60%; animation-delay: 1s; }
+        .emoji-bulle:nth-child(3) { top: 95%; left: 40%; animation-delay: 1.5s; }
+        .emoji-bulle:nth-child(4) { top: 95%; left: 75%; animation-delay: 2s; }
+        .emoji-bulle:nth-child(5) { top: 95%; left: 10%; animation-delay: 2.5s; }
+    </style>
+</head>
+<body>
+    
+    <div class="emoji-bulle">🐠</div>
+    <div class="emoji-bulle">🐟</div>
+    <div class="emoji-bulle">🐬</div>
+    <div class="emoji-bulle"><img src="images/crabe.png" alt="Crabe Lyreco" style="height: 15%; width: 15%;"></div>
+    <div class="emoji-bulle">🌊</div>
+
+   
+    <div class="container" id="top">
+        <header class="header">
+            Bienvenue dans l'Océan <span></span>
+        </header>
+        <main>
+            <h2 class="credit-titre">Nos Contributions</h2>
+            <div class="credit-container">
+                <div class="credit" data-credit="2">
+
+                        <h2>Design Graphique</h2>
+                        <p>Réalisé par : <strong>Enzo DEYRICH</strong></p>
+                        <p>Email : enzo.deyrich@ecoles-epsi.net</p>
+                    </div>
+                    <div class="credit" data-credit="3">
+                        <h2>Développement</h2>
+                        <p>Réalisé par : <strong>Elias BOUZEKOUK</strong></p>
+                        <p>Email : elias.bouzekouk@ecoles-epsi.net</p>
+                    </div>
+                    <div class="credit" data-credit="3">
+                        <h2>Développement</h2>
+                        <p>Réalisé par : <strong>Ethan GOMES</strong></p>
+                        <p>Email : ethan.gomes@ecoles-epsi.net</p>
+                    </div> 
+                    <div class="credit" data-credit="3">
+                        <h2>Développement</h2>
+                        <p>Réalisé par : <strong>Arthur PICQUE</strong></p>
+                        <p>Email : Arthur.picque@ecoles-epsi.net</p>
+                    </div>            
+
+
+
+
+
+            </div>
+            <a href="#bottom" class="bubulles">Plonger en bas </a>
+        </main>
+    </div>
+
+    
+    <a href="#top" class="flote">
+        <i>⬆️</i>
+    </a>
+
+    <footer id="bottom" class="footer">
+        <p>Merci de plonger avec nous </p>
+        <a href="#top" class="bubulles">Remonter en haut </a>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
